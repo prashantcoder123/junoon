@@ -1,0 +1,70 @@
+@import "tailwindcss";
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;  /* full black screen */
+}
+
+.color-bends-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+
+@keyframes electricGlow {
+  0% {
+    opacity: 0.4;
+    filter: blur(14px);
+  }
+  50% {
+    opacity: 1;
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 0.4;
+    filter: blur(14px);
+  }
+}
+
+.animate-electric-glow {
+  animation: electricGlow 2.4s ease-in-out infinite;
+}
