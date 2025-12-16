@@ -16,8 +16,8 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-2 left-0 z-50 w-full bg-black/40 backdrop-blur-md border-b border-white/20">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+    <header className="fixed top-0 left-0 z-50 w-full bg-black/40 backdrop-blur-md border-b border-white/20">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 pr-5 md:px-6">
         {/* Logo -> go to "/" route */}
         <Link
           to="/"
@@ -113,7 +113,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-white md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white md:hidden shrink-0"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
