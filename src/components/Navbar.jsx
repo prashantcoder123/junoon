@@ -16,7 +16,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-black/40 backdrop-blur-md border-b border-white/20">
+    <header className="fixed top-2 left-0 z-50 w-full bg-black/40 backdrop-blur-md border-b border-white/20">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 pr-5 md:px-6">
         {/* Logo -> go to "/" route */}
         <Link
