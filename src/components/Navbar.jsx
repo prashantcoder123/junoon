@@ -6,8 +6,8 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", href: "/" },          // route
-    { label: "About", href: "/#about" },   // section
-    { label: "Events", href: "/#events" }, // section
+    // { label: "About", href: "/#about" },   // section
+    { label: "Events", href: "/events" }, // section
     { label: "Schedule", href: "/schedule" },
     { label: "Team", href: "/team" },
     { label: "Developer", href: "/developer" },
